@@ -1,0 +1,225 @@
+.content .ico{
+	width: 100%;
+	height: 1.866667rem;
+	padding-top:0.533333rem;
+	background-color: #F7F7F7;
+}
+.content .ico .loginImg img{
+	display: block;
+	width: 1.32rem;
+	height: 1.32rem;
+	border-radius: 15%;
+	margin:0 auto;
+	box-shadow: 0 0 5px #c8c8c8;
+}
+
+#form_Login::before{
+	content: "";
+	position: relative;
+	top:0px;
+	display: block;
+	height: 0.186667rem;
+	width: 100%;
+	background-color: #F7F7F7;
+	border-bottom:1px solid #eee;
+}
+#form_Login{
+	width: 100%;
+	background-color: #fff;
+}
+#form_Login .msg_List{
+	width: 100%;
+	padding:0 0.2rem;
+}
+#form_Login .msg_List .item-content{
+	position: relative;
+	width: 100%;
+	height: 0.586667rem;
+	padding:0.106667rem 0;
+}
+#form_Login .msg_List .item-content .item-title,
+#form_Login .msg_List .item-content .item-input{
+	width: 20%;
+	height: 0.373333rem;
+	display: inline-block;
+}
+#form_Login .msg_List .item-content .item-input{
+	position: relative;
+	width: 78%;
+}
+#form_Login .msg_List .item-content .item-input .iconfont{
+	font-size: 0.133333rem;
+	display: none;
+}
+#form_Login .msg_List .item-content .item-input #input-phone,
+#form_Login .msg_List .item-content .item-input #input-password{
+	width: 100%;
+	height: 100%;
+	border:0;
+}
+
+.active{
+	color: #ff0000;
+}
+
+#form_Login .msg_List .item-content .item-input #cls_phone,
+#form_Login .msg_List .item-content .item-input #show-pwd-bt{
+	position: absolute;
+	right: 0.066667rem;
+	top: 0.066667rem;
+	color:#999;
+}
+
+#form_Login .content-block{
+	width: 100%;
+	height: 2.066667rem;
+	padding:0.466667rem 0.2rem;
+	background-color: #F7F7F7;
+}
+#form_Login .content-block .row .col-btn .button{
+	display: block;
+	width: 4.586667rem;
+	height: 0.64rem;
+	line-height: 0.613333rem;
+	text-align: center;
+	font-size: 0.24rem;
+	color:#fff;
+	border-radius:0.066667rem;
+	background-color: #E71F22;
+	margin:0 auto;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+#form_Login .content-block .row .row-a{
+	position: relative;
+	width: 80%;
+	left: 10%;
+	margin-top:0.133333rem;
+}
+#form_Login .content-block .row .row-a a{
+	color:#999;
+	font-size: 0.186667rem;
+}
+#form_Login .content-block .row .row-a .getPwd{
+	display: inline-block;
+	width: 1.066667rem;
+	position: absolute;
+	right:0px;
+	font-size: 0.186667rem;
+	color:#999;
+}
+
+.content #joint-login{
+	width: 100%;
+	margin-top: 0.333333rem;
+	height: 1.733333rem;
+}
+.content #joint-login img,
+.content #joint-login .loginLink{
+	margin:0 auto;
+}
+.content #joint-login .loginLink{
+	width: 3.8rem;
+	height: 0.906667rem;
+	line-height: 0.906667rem;
+}
+.content #joint-login .loginLink i{
+	display: inline-block;
+	width: 1.2rem;
+	line-height: 0.666667rem;
+	text-align: center;
+}
+.content #joint-login .loginLink .iconfont{
+	font-size: 0.56rem;
+	color:#999;
+}
+.content #joint-login .loginLink .ico3{
+	font-size: 0.613333rem;
+}
+
+.tips{
+	position: fixed;
+	width: 100%;
+	top: 15%;
+	display: none;
+	z-index: 2;
+}
+.tips .success,
+.tips .fail,
+.tips .empty{
+	width: 200px;
+	height: 100px;
+	border:1px solid #eee;
+	background-color: #f7f7f7;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+.tips .success p,
+.tips .fail p,
+.tips .empty p{
+	line-height: 40px;
+	font-size: 24px;
+	color: #F94E49;
+}
+.tips .success span,
+.tips .fail span,
+.tips .empty span{
+	line-height: 30px;
+	font-size: 18px;
+}
+
+#pwdBox{
+	display: none;
+	position: fixed;
+	z-index: 2;
+	bottom: 0.0rem;
+	width: 100%;
+	max-width: 768px;
+	height: 150px;
+	background-color: #eee;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+#pwdBox ul{
+	width: 100%;
+	height: 100%;
+	padding:0.2rem;
+	border-top: 3px solid #E71F22;
+}
+#pwdBox ul li:nth-child(1){
+	position: relative;
+}
+#pwdBox ul li:nth-child(1) a{
+	position: absolute;
+	right: 0.0rem;
+	color: #E71F22;
+}
+#pwdBox ul li:nth-child(1) span{
+	color: #E71F22;
+	font-size:0.32rem;
+}
+
+
+#pwdBox ul li:nth-child(2),
+#pwdBox ul li:nth-child(3){
+	margin-top:0.2rem;
+	padding-left: 0.4rem;
+}
+
+#pwdBox ul li .nameBox input{
+	border:1px solid #999;
+}
+#pwdBox ul li .nameBox #name_get,
+#pwdBox ul li .nameBox span{
+	float: left;
+}
+#pwdBox ul li .nameBox #name_get{
+	border:1px solid #eee;
+	width: 56%;
+	padding:0.026667rem 0;
+}
+#pwdBox ul li .nameBox #confirm{
+	background-color: #E71F22;
+	font-size: 0.133333rem;
+	color:#eee;
+	padding:0.026667rem 0.066667rem;
+}

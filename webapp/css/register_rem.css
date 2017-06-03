@@ -1,0 +1,134 @@
+
+#form_Register::before{
+	content: "";
+	position: relative;
+	top:0px;
+	display: block;
+	height: 0.186667rem;
+	width: 100%;
+	background-color: #F7F7F7;
+	border-bottom:1px solid #eee;
+}
+
+#form_Register{
+	width: 100%;
+	background-color: #fff;
+}
+#form_Register .msg_List{
+	width: 100%;
+	padding:0 0.2rem;
+}
+#form_Register .msg_List .item-content{
+	position: relative;
+	width: 100%;
+	height: 0.586667rem;
+	padding:0.106667rem 0;
+}
+#form_Register .msg_List .item-content .item-title,
+#form_Register .msg_List .item-content .item-input{
+	width: 20%;
+	height: 0.373333rem;
+	display: inline-block;
+}
+#form_Register .msg_List .item-content .item-input{
+	position: relative;
+	width: 78%;
+}
+#form_Register .msg_List .item-content .item-input .iconfont{
+	font-size: 0.133333rem;
+	display: none;
+}
+#form_Register .msg_List .item-content .item-input #input-phone,
+#form_Register .msg_List .item-content .item-input #input-password,
+#form_Register .msg_List .item-content .item-input #input-email,
+#form_Register .msg_List .item-content .item-input #input-verify{
+	width: 100%;
+	height: 100%;
+	border:0;
+}
+.active{
+	color: #ff0000;
+}
+
+#form_Register .msg_List .item-content .item-input #cls_phone,
+#form_Register .msg_List .item-content .item-input #show-pw-bt,
+#form_Register .msg_List .item-content .item-input #cls_email,
+#form_Register .msg_List .item-content .item-input #img_validate{
+	position: absolute;
+	right: 0.066667rem;
+	top: 0.066667rem;
+	color:#999;
+}
+#form_Register .msg_List .item-content .item-input #img_validate{
+	top:-0.026667rem;
+	background:url(../img/validate.fw.png);
+	display: block;
+	width: 0.933333rem;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	text-align: center;
+	border:1px solid #936C6F;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+
+#form_Register .content-block{
+	width: 100%;
+	height: 2.066667rem;
+	padding:0.466667rem 0.2rem;
+	background-color: #F7F7F7;
+}
+#form_Register .content-block .row .col-btn .button{
+	display: block;
+	width: 4.586667rem;
+	height: 0.64rem;
+	line-height: 0.613333rem;
+	text-align: center;
+	font-size: 18px
+	;
+	color:#fff;
+	border-radius:0.066667rem;
+	background-color: #E71F22;
+	margin:0 auto;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+
+#form_Register .content-block .row .row-a{
+	margin-top:0.133333rem;
+	padding-left: 10%;
+}
+#form_Register .content-block .row .row-a a{
+	color:#999;
+	font-size: 0.186667rem;
+}
+
+.tips{
+	position: fixed;
+	width: 100%;
+	top: 15%;
+	display: none;
+	z-index: 2;
+}
+.tips .success,
+.tips .fail,
+.tips .empty{
+	width: 200px;
+	height: 100px;
+	border:1px solid #eee;
+	background-color: #f7f7f7;
+	margin:0 auto;
+	text-align: center;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+.tips .success p,
+.tips .fail p,
+.tips .empty p{
+	line-height: 40px;
+	font-size: 24px;
+	color: #F94E49;
+}
+.tips .success span,
+.tips .fail span,
+.tips .empty span{
+	line-height: 30px;
+	font-size: 18px;
+}

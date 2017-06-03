@@ -1,0 +1,237 @@
+body,html{
+	height: 100%;
+	max-width: 768px;
+}
+
+.content .header{
+	width: 100%;
+	height: 2.4rem;
+	padding-top: 0.533333rem;
+	background-color: #E71F22;
+	text-align: center;
+}
+.content .header .person_Logo img{
+	width: 0.866667rem;
+	height: 0.866667rem;
+	border-radius:0.066667rem;
+	margin:0 auto;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+.content .header .person_Logo span{
+	display: inline-block;
+	margin-top: 0.066667rem;
+	line-height: 0.213333rem;
+	color:#eee;
+}
+.content .header .member{
+	line-height: 0.533333rem;
+}
+.content .header .member span{
+	display: inline-block;
+	width: 1.933333rem;
+	height:0.333333rem;
+	margin:0 0.066667rem;
+	font-size: 0.133333rem;
+	line-height: 0.32rem;
+	background-color: #C81518;
+	border-radius:0.16rem;
+	color:#fff;
+	box-shadow: 0 0 10px #c8c8c8;
+}
+
+.content .money{
+	width: 100%;
+	height: 1.066667rem;
+	padding:0.2rem 0.426667rem;
+	background-color: #F7F7F7;
+}
+.content .money ul li{
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+}
+.content .money ul li:nth-child(1){
+	border-right: 1px solid #ccc;
+}
+.content .money ul li .iconfont{
+	font-size: 0.453333rem;
+	line-height: 0.453333rem;
+	color: #E71F22;
+	position: relative;
+	top: -0.066667rem;
+}
+.content .money ul li .icon-xiaofei{
+	color:#23CDB7;
+}
+
+.content .money ul li .account,
+.content .money ul li .pay{
+	display: inline-block;
+}
+.content .money ul li .ico #Account,
+.content .money ul li .ico #Pay{
+	color:#E71F22;
+}
+.content .money ul li .account span,
+.content .money ul li .pay span{
+	font-size: 0.213333rem;
+	color: #666;
+}
+
+.content .order{
+	width: 100%;
+	height: 1.066667rem;
+	padding:0 6%;
+}
+.content .order ul li{
+	display: inline-block;
+	height: 100%;
+	width: 24%;
+	text-align: center;
+	padding-top: 0.106667rem;
+}
+.content .order ul li i{
+	font-size: 0.4rem;
+	color:#999;
+}
+.content .order ul li span{
+	font-size: 0.16rem;
+	color: #666;
+}
+
+
+.content .record{
+	width: 100%;
+	height: 2.133333rem;
+}
+.content .record .icon .iconfont{
+	font-size: 0.32rem;
+}
+
+.icon-youhuiquan{
+	color:#E82E31;
+}
+.icon-shoucang{
+	color:#FEC54C;
+}
+.icon-lianxikefu{
+	color:#70BBF1;
+}
+
+.content .record ul{
+	position: relative;
+}
+.content .record ul li .icon,
+.content .record ul li .box{
+	display: inline-block;
+	height: 0.64rem;
+	line-height: 0.64rem;
+	padding:0 0.2rem;
+}
+
+.content .record ul li .box{
+	width: 80%;
+	padding:0px;
+	border-bottom:1px solid #eee;
+}
+.content .record ul li .box span{
+	font-size: 0.133333rem;
+}
+.box .gt{
+	color:#999;
+	padding-left: 0.2rem;
+	position: absolute;
+	right: 5%;
+}
+
+.box span{
+	color: #666;
+}
+
+.content .record::before,
+.content .profile::before,
+.content .address::before,
+.content .exclusive::before{
+	content: "";
+	position: relative;
+	top:0px;
+	display: block;
+	height:0.186667rem;
+	width: 100%;
+	background-color: #F7F7F7;
+	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
+}
+
+.content .profile,
+.content .address,
+.content .exclusive{
+	width: 100%;
+	height: 0.88rem;
+	line-height: 0.64rem;
+	position: relative;
+}
+
+.content .exclusive{
+	border-bottom:1px solid #eee;
+}
+.content .profile .iconfont,
+.content .address .iconfont,
+.content .exclusive .iconfont{
+	font-size: 0.32rem;
+	padding:0 0.2rem;
+}
+
+.icon-wode{
+	color:#7DC359;
+}
+.icon-shouhuodizhi{
+	color:#F987B2;
+}
+.icon-erweima{
+	color:#23CDB7;
+}
+
+.content .box .icon-jinru{
+	font-size: 0.266667rem;
+	padding:0.0rem;
+	color: #999;
+}
+
+
+.content .loginOut{
+	width: 100%;
+	height: 0.96rem;
+	padding-top: 0.42rem;
+	/*background-color: #F7F7F7;*/
+}
+.content .loginOut #login_Out a{
+	display: block;
+	width: 2.506667rem;
+	height: 0.4rem;
+	line-height: 0.373333rem;
+	text-align: center;
+	font-size: 0.213333rem;
+	color:#fff;
+	background-color: #E71F22;
+	border-radius:0.066667rem;
+	margin:0 auto;
+	box-shadow: 0 0 20px #c8c8c8;
+}
+
+.kefuImg img{
+	width: 0.666667rem;
+	height: 0.666667rem;
+	position: fixed;
+	top:5%;
+	right: 5%;
+}
+
+
+footer .iconfont{
+	color: #999;
+}
+footer ul li span{
+	color: #666;
+}
+

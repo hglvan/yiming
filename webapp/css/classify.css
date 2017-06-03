@@ -1,0 +1,72 @@
+@charset "UTF-8";
+/* 多行注释：编译时会出现在css文件中 sass兼容css写法 */
+a { color: #333; font-size: 14px; }
+
+/*重置样式表*/
+/*==========样式重置===========*/
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, li, ol, dl, dt, dd { padding: 0; margin: 0; }
+
+ul, ol { list-style: none; }
+
+img { display: block; border: 0; }
+
+input { outline: none; }
+
+header, footer, section, nav, main { display: block; }
+
+body { font-size: 12px; font-family: "微软雅黑"; color: #3e3e3e; background-color: #F3F3F3; }
+
+* { box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:after { display: block; content: ''; clear: 0; height: 0; }
+
+body, html { height: 100%; }
+
+footer { width: 100%; height: 52px; color: #000000; background-color: #F8F8F8; }
+
+footer ul { cursor: pointer; width: 100%; display: flex; margin-bottom: 0; }
+
+footer ul li { flex: 1; display: flex; align-items: center; flex-direction: column; }
+
+footer ul li span, footer ul li i { display: block; flex: 1; }
+
+footer ul li i { font-size: 24px; padding-top: 6px; }
+
+header form span { cursor: pointer; }
+
+.classify { height: 100%; display: flex; flex-direction: column; justify-content: space-between; max-width: 650px; margin: 0 auto; background-color: #F3F3F3; }
+
+header { width: 100%; height: 52px; display: flex; justify-content: space-around; align-items: center; }
+
+header > form { width: 80%; }
+
+header > form > input#exampleInputName2.form-control { width: 100%; height: 34px; border-radius: 17px; }
+
+header p { width: 10%; text-align: center; display: flex; justify-content: center; }
+
+header p span { background-color: #EBEBEB; display: block; height: 34px; width: 34px; border-radius: 50%; line-height: 34px; font-size: 16px; color: #FF0000; cursor: pointer; border-color: red; font-weight: bold; }
+
+main { flex: 1; margin: 2% 0; height:80%; overflow-y:auto;}
+
+main ul { height: 100%; width: 100%; display: flex; flex: 1; flex-direction: column; }
+
+main ul li { flex: 1; width: 100%; border-bottom: 1px solid #E6E9ED; background-color: #FFF; display: flex; }
+
+main ul li a { width: 90%; text-align: center; line-height: 2.5; }
+
+main ul li span.iconfont { width: 10%; line-height: 2.5; font-size: 14px; }
+
+div.kefu { position: fixed; right: 5%; bottom: 20%; }
+
+div.kefu > a { width: 50px; }
+
+div.kefu > a img { width: 50px; }
+
+div.kefu > a p { font-size: 12px; }
+
+@media screen and (min-width: 700px) { main ul li a { line-height: 4.5; }
+  main ul li span { line-height: 4.5; } }

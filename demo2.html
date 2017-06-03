@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="libs/common/global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        用户名：<input type="text" id="username"><br>
+        密码：<input type="password" id="password"><br>
+        地址：<input type="text" id="address"><br>
+        <button type="button" id="loginBtn">登录</button>
+        <button type="button" id="regBtn">注册</button>
+        <button type="button" id="cartBtn">购物车</button>
+        <button type="button" id="addressBtn">地址增加</button>
+        <button type="button" id="addresschangeBtn">地址修改</button>
+        <button type="button" id="getaddressBtn">获取地址</button>
+        <button type="button" id="removeaddressBtn">删除地址</button>
+    </div>
+    <script>
+        $(function () {
+            //登录
+            $('#loginBtn').click(function () {
+                $.post(erp.baseUrl +'login',{
+                    username : $('#username').val(),
+                    password : $('#password').val()
+                },function (response) {
+                    var data = response;
+                    if(data.status){
+                        alert('登录成功');
+                    }else{
+                        alert(data.message);
+                    }
+                })
+            })
+            //注册
+            $('#regBtn').click(function () {
+                $.post(erp.baseUrl +'register',{
+                    username : $('#username').val(),
+                    password : $('#password').val()
+                },function (response) {
+                    var data = response;
+                    if(data.status){
+                        alert('注册成功');
+                    }else{
+                        alert('登录失败，用户名或密码错误');
+                    }
+                })
+            })
+            //购物车
+            $('#cartBtn').click(function () {
+                $.post(erp.baseUrl +'getorders',{
+
+                },function (response) {
+
+                })
+            })
+            //写入地址
+            $('#addressBtn').click(function () {
+                var obj = {
+                    address : $('#address').val(),
+                    username : 'aa',
+                    elephone : '12344',
+                    dtlAddress : 'aaaa'
+                };
+                //转字符串
+                var resObj = JSON.stringify(obj);
+                //var arr = ['myaddress','myorder','mycollection'];
+
+                $.post(erp.baseUrl +'putmyoption',{
+                    myaddress : resObj
+                },function (response) {
+
+                })
+            })
+            //修改地址
+            $('#addresschangeBtn').click(function () {
+                //var arr = ['myaddress','myorder','mycollection'];
+                var obj = {
+                    address : $('#address').val(),
+                    username : 'aa',
+                    elephone : '12344',
+                    dtlAddress : 'aaaa'
+                };
+                //var reObj = {key : 'username', value : 'aa'};
+                $.post(erp.baseUrl +'setmyoption',{
+                    option : 'password',
+                    value : '1111'
+                },function (response) {
+
+                })
+            })
+
+            //删除地址
+            $('#removeaddressBtn').click(function () {
+                //var arr = ['myaddress','myorder','mycollection'];
+
+                var reObj = {key : 'username', value : 'aa'};
+                $.post(erp.baseUrl +'remove',{
+                    option : 'myaddress',
+                    dataid : '1495713647414',
+                },function (response) {
+
+                })
+            })
+
+            //获取地址
+            var arr = [];
+            $('#getaddressBtn').click(function () {
+
+                $.post(erp.baseUrl +'getmyoption',{
+                    option : 'myaddress'
+                },function (response) {
+                    arr = response;
+                    console.log(arr);
+                })
+            })
+        })
+
+
+    </script>
+</body>
+</html>

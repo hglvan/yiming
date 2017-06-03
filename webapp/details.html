@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" id="vp" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/details.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="./icon-font/iconfont.css">
+    <script src="../libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="js/swiper-3.4.2.min.js"></script>
+     <script src="../libs/common/global.js"></script>
+    <script src="js/details.js"></script>
+   
+    <script src="../libs/jquery/jquery.fly.min.js"></script>
+    <script src="js/db.js"></script>
+    <script>
+    $(function() {
+
+    $.get(erp.baseUrl + 'getsession',{},function(data){
+        console.log(data.data)
+    })
+
+        // $.post(erp.baseUrl + 'getProducts', {
+        //     goodsid: GetRequest()
+        // }, function(data) {
+        //     // var oJson = JSON.parse(data);
+        //     console.log(data)
+        //     getJson(data[0]);
+
+        // })
+
+        // function GetRequest() {
+        //     var url = location.search;
+        //     if (url.indexOf("?") != -1) {
+        //         var str = url.substr(1);
+        //         var strArr = str.split('=');
+        //         var id = strArr[1]
+        //         console.log(id);
+        //     }
+        //     return id;
+        // }
+
+        // function getJson(oJson) {
+        //     var gid = GetRequest();
+        //     console.log(gid)
+
+        //     $('.swiper-slide img').attr('src', 'goodsimg/' + oJson.goodsimg + '.jpg');
+        //     $('.pf').html(oJson.goodsprice);
+        //     $('.goodsTittle').html(oJson.goodstitle);
+
+        // }
+
+    })
+    </script>
+</head>
+
+<body>
+    <div class="all">
+        <section>
+            <!-- 加入购物车提示 -->
+            <div class="addcar">
+                <div class="addcar_top clear">
+                    <p>添加成功</p>
+                    <p class="off">x</p>
+                </div>
+                <div class="addcar_concent">
+                    商品已经添加至购物车
+                </div>
+                <div class="addcar_bottom">
+                    <input type="button" value="取消" class="off">
+                    <input type="button" value="现在去购物车" class="goMycar">
+                </div>
+            </div>
+            <!-- 收藏提示 -->
+            <div class="collect">
+                <div class="addcar_top clear">
+                    <p>操作提示</p>
+                    <p class="off">x</p>
+                </div>
+                <div class="addcar_concent">
+                    已收藏成功
+                </div>
+                <div class="addcar_bottom">
+                    <input type="button" value="确认" class="collectBtn">
+                </div>
+            </div>
+            <!-- 轮播图 -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="" alt=""></div>
+                    <!--   <div class="swiper-slide"><img src="img/02.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/03.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/04.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="img/05.jpg" alt=""></div> -->
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- 商品名称与价格 -->
+            <div class="sec_goods">
+                <p class="goodsTittle">摩洛哥黄金坚果油 免洗护发精油 70ml</p>
+                <div class="fl_price">
+                    <p>发廊销售价：</p>
+                    <del class="fl">¥78.00</del>
+                </div>
+                <div class="pf_price">
+                    <p>平台批发价：</p><span class="pf">18.00</span><span class="sold">已售3279件 </span></div>
+            </div>
+            <div class="ln"></div>
+            <!-- 设置产品数量 -->
+            <div class="buy-num ">
+                <div>购买数量</div>
+                <div class="buy clear">
+                    <div class="buy-add">
+                        <span class="minus">-</span>
+                        <input type="text" class="num" value="1">
+                        <span class="add">+</span>
+                    </div>
+                    <div class="sy_num">( 剩余可购买数量：<span class="sy">5866</span><span>件 )</span></div>
+                </div>
+            </div>
+            <!-- 设置商品属性 -->
+            <div class="attr">
+                <table>
+                    <tr>
+                        <td>属性</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>商品品牌</td>
+                        <td>明澄雅</td>
+                    </tr>
+                    <tr>
+                        <td>所属系列</td>
+                        <td>专业配方</td>
+                    </tr>
+                    <tr>
+                        <td>配料表</td>
+                        <td>专业配方</td>
+                    </tr>
+                    <tr>
+                        <td>商品产地</td>
+                        <td>中国-广东省-广州市</td>
+                    </tr>
+                    <tr>
+                        <td>厂名</td>
+                        <td>明澄雅公司</td>
+                    </tr>
+                    <tr>
+                        <td>储藏方法</td>
+                        <td>阴凉干燥避光</td>
+                    </tr>
+                    <tr>
+                        <td>保质期</td>
+                        <td>3年</td>
+                    </tr>
+                    <tr>
+                        <td>适用发质</td>
+                        <td>所有发质</td>
+                    </tr>
+                    <tr>
+                        <td>适用人群</td>
+                        <td>通用</td>
+                    </tr>
+                    <tr>
+                        <td>包装</td>
+                        <td>瓶装</td>
+                    </tr>
+                    <tr>
+                        <td>特殊用途化妆品</td>
+                        <td>否</td>
+                    </tr>
+                </table>
+                <div class="line"></div>
+                <div class="attr_bottom">
+                    <a href="#" class="zx">商品咨询<span class="zx_num">0</span></a>
+                    <a href="#" class="pj">商品评价<span class="pj_num">0</span></a>
+                </div>
+            </div>
+            <div class="showImg">
+                <img src="img/l01.jpg" alt="">
+                <img src="img/l02.jpg" alt="">
+                <img src="img/l03.jpg" alt="">
+                <img src="img/l04.jpg" alt="">
+                <img src="img/l05.jpg" alt="">
+                <img src="img/l06.jpg" alt="">
+                <img src="img/l07.jpg" alt="">
+                <img src="img/l08.jpg" alt="">
+                <img src="img/l09.jpg" alt="">
+                <img src="img/l10.jpg" alt="">
+                <img src="img/l11.jpg" alt="">
+                <img src="img/l12.jpg" alt="">
+                <img src="img/l13.jpg" alt="">
+                <img src="img/l14.jpg" alt="">
+                <img src="img/l15.jpg" alt="">
+            </div>
+            <div class="onlineclient"><img src="img/onlineclient.jpg" height="46" width="46" alt=""></div>
+        </section>
+        <footer>
+            <div class="footer_left"><i class="iconfont icon-shoucang"></i>
+                <br><a href="#" class="sc">收藏</a></div>
+            <div class="buy_buy"><a href="#">立即购买</a></div>
+            <div class="buy_car" id="end"><a href="#">加入购物车</a></div>
+        </footer>
+    </div>
+</body>
+
+</html>

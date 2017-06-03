@@ -1,0 +1,212 @@
+
+body,html{
+	height: 100%;
+	max-width: 768px;
+}
+
+.content .header{
+	width: 100%;
+	height: 175px;
+	padding-top: 40px;
+	background-color: #E71F22;
+	text-align: center;
+}
+.content .header .person_Logo img{
+	width: 65px;
+	height: 65px;
+	border-radius:5px;
+	margin:0 auto;
+	box-shadow: 0 0 20px #c8c8c8;
+
+}
+.content .header .person_Logo span{
+	display: inline-block;
+	margin-top: 2px;
+	line-height: 16px;
+	color:#fff;
+}
+.content .header .member{
+	line-height: 40px;
+}
+.content .header .member span{
+	display: inline-block;
+	width: 145px;
+	height:25px;
+	margin:0 5px;
+	line-height: 24px;
+	background-color: #C81518;
+	border-radius:12px;
+	color:#fff;
+	box-shadow: 0 0 10px #c8c8c8;
+
+}
+
+.content .money{
+	width: 100%;
+	height: 80px;
+	padding:15px 32px;
+	background-color: #F7F7F7;
+}
+.content .money ul li{
+	display: inline-block;
+	width: 49%;
+	text-align: center;
+}
+.content .money ul li:nth-child(1){
+	border-right: 1px solid #ccc;
+}
+.content .money ul li .iconfont{
+	font-size: 34px;
+	line-height: 34px;
+	color: #E71F22;
+	position: relative;
+	top: -5px;
+}
+.content .money ul li .icon-xiaofei{
+	color:#23CDB7;
+}
+
+.content .money ul li .account,
+.content .money ul li .pay{
+	display: inline-block;
+}
+.content .money ul li .ico #Account,
+.content .money ul li .ico #Pay{
+	color:#E71F22;
+}
+.content .money ul li .account span,
+.content .money ul li .pay span{
+	font-size: 16px;
+}
+
+.content .order{
+	width: 100%;
+	height: 80px;
+	padding:0 6%;
+}
+.content .order ul li{
+	display: inline-block;
+	height: 100%;
+	width: 23%;
+	text-align: center;
+	padding-top: 8px;
+}
+.content .order ul li i{
+	font-size: 24px;
+	color:#999;
+}
+.content .order ul li span{
+	font-size: 14px;
+}
+
+
+.content .record{
+	width: 100%;
+	height: 135px;
+}
+.content .record .icon .iconfont{
+	font-size: 18px;
+}
+.icon-youhuiquan{
+	color:#E82E31;
+}
+.icon-shoucang{
+	color:#FEC54C;
+}
+.icon-lianxikefu{
+	color:#70BBF1;
+}
+
+.content .record ul{
+	position: relative;
+}
+.content .record ul li .icon,
+.content .record ul li .box{
+	display: inline-block;
+	height: 40px;
+	line-height: 38px;
+	padding:0 15px;
+}
+.content .record ul li .box{
+	width: 80%;
+	padding:0px;
+	border-bottom:1px solid #ddd;
+}
+.box .gt{
+	color:#999;
+	padding-left: 15px;
+	position: absolute;
+	right: 10%;
+}
+
+.content .record::before,
+.content .profile::before,
+.content .address::before,
+.content .exclusive::before{
+	content: "";
+	position: relative;
+	top:0px;
+	display: block;
+	height: 14px;
+	width: 100%;
+	background-color: #F7F7F7;
+	border-bottom:1px solid #eee;
+	border-top:1px solid #eee;
+}
+
+.content .profile,
+.content .address,
+.content .exclusive{
+	width: 100%;
+	height: 52px;
+	line-height: 38px;
+	position: relative;
+}
+
+.content .exclusive{
+	border-bottom:1px solid #eee;
+}
+.content .profile .iconfont,
+.content .address .iconfont,
+.content .exclusive .iconfont{
+	font-size: 18px;
+	padding:0 15px;
+}
+
+.icon-wode{
+	color:#7DC359;
+}
+.icon-shouhuodizhi{
+	color:#F987B2;
+}
+.icon-erweima{
+	color:#23CDB7;
+}
+
+
+.content .loginOut{
+	width: 100%;
+	height: 72px;
+	padding-top: 16px;
+	// background-color: #F7F7F7;
+}
+.content .loginOut #login_Out a{
+	display: block;
+	width: 188px;
+	height: 30px;
+	line-height: 28px;
+	text-align: center;
+	font-size: 16px;
+	color:#fff;
+	background-color: #E71F22;
+	border-radius:5px;
+	margin:0 auto;
+}
+
+.kefuImg img{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top:5%;
+	right: 5%;
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="libs/common/global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        关键字:<input type="text" id="keyword">
+        <button type="button" id="searchid">查找</button>
+        <button type="button" id="searchid1">列表查找</button>
+        <button type="button" id="searchid2">详情查找</button>
+    </div>
+    <script>
+        $(function () {
+            $('#searchid').click(function () {
+                $.post(erp.baseUrl +'searchProducts',{
+                    keyword : $('#keyword').val()
+                },function (response) {
+
+                })
+            })
+        })
+
+        $(function () {
+            $('#searchid1').click(function () {
+                $.post(erp.baseUrl +'getProducts',{
+                    classify1 : $('#keyword').val()
+                },function (response) {
+
+                })
+            })
+        })
+
+        $(function () {
+            $('#searchid2').click(function () {
+                $.post(erp.baseUrl +'getProducts',{
+                    goodsid : $('#keyword').val()
+                },function (response) {
+
+                })
+            })
+        })
+    </script>
+</body>
+</html>

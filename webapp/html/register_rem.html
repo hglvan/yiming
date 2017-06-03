@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+    <script src="../../libs/jquery/jquery-2.1.1.min.js"></script>
+    <script src="../../libs/common/global.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
+	<title>用户注册</title>
+
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/register_rem.css">
+    <link rel="stylesheet" type="text/css" href="../css/reg_log_base_rem.css">
+    <script type="text/javascript" src="../js/rem.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<!--标题栏-->
+        <header class="bar">
+            <a href="login_rem.html" class="iconfont icon-fanhui lg"></a>
+            <h1 class="title">用户注册</h1>
+        </header>
+		<!-- 内容栏 -->
+		<div class="content">
+			<form id="form_Register" action="#" method="post">
+				<div class="msg_List">
+					<ul>
+						<li>
+							<div class="item-content">
+                                <div class="sm_box"></div>
+								<div class="item-title">手机号</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="手机号" name="phone" value="" id="input-phone">
+                                    <a href="#" id="cls_phone" class="iconfont icon-x"></a>
+                                </div>
+							</div>
+						</li>
+						<li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="sm_box"></div>
+                                    <div class="item-title">密码</div>
+                                    <div class="item-input">
+                                        <input type="password" name="password" placeholder="请输入6~12位密码" value="" id="input-password">
+                                        <a href="#" id="show-pw-bt" class="iconfont icon-bukejian"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="sm_box"></div>
+                                <div class="item-title">邮箱</div>
+                                <div class="item-input">
+                                    <input type="text" placeholder="邮箱" name="email" value="" id="input-email">
+                                    <a href="#" id="cls_email" class="iconfont icon-x"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="item-content">
+                                <div class="item-inner">
+                                    <div class="item-title label">验证码</div>
+                                    <div class="item-input">
+                                        <input type="text" placeholder="输入右边的验证码" name="verify" value="" id="input-verify">
+
+                                        <i id="img_validate">62324</i>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </li>
+					</ul>
+
+
+				</div>
+
+				<div class="content-block">
+                    <div class="row">
+                        <div class="col-btn">
+                            <a href="#" class="button register" id="resBtn">注册</a>
+
+                            <div class="row-a">
+                                <a href="#">注册即同意<span style="color: #6bc1b2">《易铭用户使用协议》</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tips">
+                    <div class="success">
+                        <p>恭喜你&nbsp;</p>
+                        <span>注册成功！</span>
+                    </div>
+                    <div class="fail">
+                        <p>抱歉&nbsp;</p>
+                        <span>用户名已存在！</span>
+                    </div>
+                    <div class="empty">
+                        <p>你好&nbsp;</p>
+                        <span>输入框不能为空！</span>
+                    </div>
+                </div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+        

@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* 多行注释：编译时会出现在css文件中 sass兼容css写法 */
+a { color: #333; font-size: 14px; }
+
+/*重置样式表*/
+/*==========样式重置===========*/
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, li, ol, dl, dt, dd { padding: 0; margin: 0; }
+
+ul, ol { list-style: none; }
+
+img { display: block; border: 0; }
+
+input { outline: none; }
+
+header, footer, section, nav, main { display: block; }
+
+body { font-size: 12px; font-family: "微软雅黑"; color: #3e3e3e; background-color: #F3F3F3; }
+
+* { box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:after { display: block; content: ''; clear: 0; height: 0; }
+
+body, html { height: 100%; }
+
+footer { width: 100%; height: 52px; color: #000000; background-color: #F8F8F8; }
+
+footer ul { cursor: pointer; width: 100%; display: flex; margin-bottom: 0; }
+
+footer ul li { flex: 1; display: flex; align-items: center; flex-direction: column; }
+
+footer ul li span, footer ul li i { display: block; flex: 1; }
+
+footer ul li i { font-size: 24px; padding-top: 6px; }
+
+.list_xhtz { height: 100%; display: flex; flex-direction: column; justify-content: space-between; max-width: 650px; margin: 0 auto; background-color: #F3F3F3; }
+
+header { background-color: #FFF; }
+
+header > ul { height: 36px; display: flex; text-align: center; line-height: 36px; border-bottom: 1px solid #ccc; cursor: pointer; }
+
+header > ul li { width: 22%; }
+
+header > ul li span { font-size: 14px; }
+
+header > ul li:first-child strong { display: inline-block; }
+
+header > ul li strong { font-size: 14px; display: none; }
+
+header > ul > span { width: 12%; background-color: #C40000; color: white; }
+
+header div.search { display: none; height: 90px; border: 1px solid #ccc; padding-top: 0.5%; }
+
+header div.search ul { display: flex; }
+
+header div.search ul li { flex: 1; padding-left: 2%; }
+
+header div.search ul li a { color: #544A59; }
+
+header div.search > div { display: flex; align-items: center; height: 60px; }
+
+header div.search > div form { width: 100%; display: flex; position: relative; margin-left: 2%; }
+
+header div.search > div form input { width: 95%; height: 30px; border-radius: 15px; border: 1px solid #F6BB42; padding-left: 2%; }
+
+header div.search > div form span { line-height: 30px;z-index:1; text-align: center; height: 30px; width: 44px; background-color: #C40000; color: white; border-top-right-radius: 15px; border-bottom-right-radius: 15px; position: absolute; right: 5%; }
+
+main { padding-top: 2%; flex: 1; width: 100%; overflow-y: auto; overflow-x: hidden; }
+
+main ul { display: flex; flex-wrap: wrap; justify-content: space-around; }
+
+main ul li { margin-bottom: 1%; background-color: #FFF; border-radius: 4px; width: 47%; padding-bottom: 1%; }
+
+main ul li div img { width: 100%; }
+
+main ul li div:nth-child(2) { overflow: hidden; }
+
+main ul li div:nth-child(2) a { font-size: 12px; padding: 1% 0 1% 2%; width: 100%; white-space: nowrap; }
+
+main ul li div:nth-child(3) { display: flex; }
+
+main ul li div:nth-child(3) p { padding: 1% 0; flex: 1; }
+
+main ul li div:nth-child(3) p span { padding: 1% 0 2% 2%; }
+
+main ul li div:nth-child(3) p:first-child { padding-left: 2%; font-weight: bold; color: #D91C32; }
+
+main ul li div:nth-child(3) p:last-child { text-align: right; padding-right: 2%; }
+
+main ul li div:nth-child(3) p:last-child span { color: #D91C32; }

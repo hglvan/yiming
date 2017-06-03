@@ -1,0 +1,302 @@
+@charset "UTF-8";
+/* 多行注释：编译时会出现在css文件中 sass兼容css写法 */
+a { color: #333; font-size: 14px; }
+
+/*重置样式表*/
+/*==========样式重置===========*/
+body, h1, h2, h3, h4, h5, h6, p, a, input, img, ul, li, ol, dl, dt, dd { padding: 0; margin: 0; }
+
+ul, ol { list-style: none; }
+
+img { display: block; border: 0; }
+
+input { outline: none; }
+
+header, footer, section, nav, main { display: block; }
+
+body { font-size: 12px; font-family: "微软雅黑"; color: #3e3e3e; background-color: #F3F3F3; }
+
+* { box-sizing: border-box; }
+
+a { text-decoration: none; }
+
+.clearfix { zoom: 1; }
+
+.clearfix:after { display: block; content: ''; clear: 0; height: 0; }
+
+body, html { height: 100%; }
+
+footer { width: 100%; height: 52px; color: #000000; background-color: #F8F8F8; }
+
+footer ul { cursor: pointer; width: 100%; display: flex; margin-bottom: 0; }
+
+footer ul li { flex: 1; display: flex; align-items: center; flex-direction: column; }
+
+footer ul li span, footer ul li i { display: block; flex: 1; }
+
+footer ul li i { font-size: 24px; padding-top: 6px; }
+
+header form span { cursor: pointer; }
+
+#my_wrap { height: 100%; display: flex; flex-direction: column; justify-content: space-between; max-width: 650px; margin: 0 auto; background-color: #F3F3F3; }
+
+header { width: 100%; height: 50px; display: flex; align-items: center; }
+
+header .head_right { width: 100%; }
+
+header .head_right form { width: 100%; display: flex; justify-content: space-around; position: relative; }
+
+header .head_right form .form-control { width: 80%; }
+
+header .head_right form span { position: absolute; right: 12%; top: 30%; }
+
+main { flex: 1; overflow-x: hidden; overflow-y: auto;width:100%; }
+
+main .carousel_wrap { width: 100%; padding-top: 1%; position: relative; }
+
+main .carousel_wrap .item img { width: 100%; }
+
+main .carousel_wrap .carousel-control { display: none; }
+
+main .carousel_wrap .carousel-indicators li { background-color: rgba(0, 0, 0, 0.5); }
+
+main .carousel_wrap .carousel-indicators .active { background-color: red; }
+
+main div.second { padding-top: 1.5%; }
+
+main div.second p { height: 44px; line-height: 44px; text-align: center; background-color: #FF4400; color: white; font-weight: bold; }
+
+main div.third { padding-top: 1.5%; }
+
+main div.third ul { width: 100%; display: flex; flex-wrap: wrap; }
+
+main div.third ul li { width: 25%; display: flex; text-align: center; justify-content: center; }
+
+main div.third ul li a { display: block; }
+
+main div.third ul li a:hover { text-decoration: none; }
+
+main div.third ul li a img { display: block; width: 100%; }
+
+main div.third ul li a span { display: block; }
+
+main div.forth { margin: 3% 0; }
+
+main div.forth a img { width: 100%; }
+
+main div.fifth { display: flex; }
+
+main div.fifth .fifth_1 { flex: 1; padding: 0 2%; }
+
+main div.fifth .fifth_1 a { display: block; }
+
+main div.fifth .fifth_1 a img { width: 100%; }
+
+main div.fifth ul { flex: 1; display: flex; flex-direction: column; justify-content: space-between; }
+
+main div.fifth ul li img { width: 100%; }
+
+main div.sixth { margin: 2.5% 0; }
+
+main div.seventh { width: 100%; }
+
+main div.seventh ul { background-color: #FFF; width: 100%; padding: 0 2%; display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+main div.seventh ul li { width: 49%; border: 1px solid #ccc; margin-top: 1%; overflow: hidden; }
+
+main div.seventh ul li img { width: 100%; }
+
+main div.seventh ul li > a:nth-child(2) { width: 100%; white-space: nowrap; padding: 0 2%; line-height: 2; }
+
+main div.seventh ul li p { padding-left: 1%; }
+
+main div.seventh ul li p span:first-child { color: #e6282c; font-size: 16px; font-weight: bold; }
+
+main div.seventh ul li p span:last-child { font-size: 16px; text-decoration: line-through; }
+
+main div.eighth { margin: 2.5% 0; }
+
+main div.eighth img { width: 100%; }
+
+main div.ninth { width: 100%; margin-bottom: 1%; }
+
+main div.ninth img { width: 100%; }
+
+main div.tenth { width: 100%; }
+
+main div.tenth ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; }
+
+main div.tenth ul li { margin-top: 2%; width: 31%; }
+
+main div.tenth ul li a img { width: 100%; }
+
+main div.eleventh { width: 100%; margin: 2% 0; }
+
+main div.eleventh img { width: 100%; }
+
+main div.twelfth { width: 100%; }
+
+main div.twelfth img { width: 100%; }
+
+main div.thirteenth { margin: 2% 0; width: 100%; }
+
+main div.thirteenth ul { width: 100%; display: flex; justify-content: space-around; }
+
+main div.thirteenth ul li { width: 45%; }
+
+main div.thirteenth ul li img { width: 100%; }
+
+main div.fourteenth { width: 100%; margin-bottom: 1%; }
+
+main div.fourteenth img { width: 100%; }
+
+main div.fifteenth img { width: 100%; }
+
+main div.sixteenth { width: 100%; }
+
+main div.sixteenth ul:first-child { margin: 3% 0; display: flex; justify-content: space-around; }
+
+main div.sixteenth ul:first-child li { width: 46%; }
+
+main div.sixteenth ul:first-child li img { width: 100%; }
+
+main div.sixteenth ul:last-child { display: flex; justify-content: space-around; }
+
+main div.sixteenth ul:last-child li { width: 30%; }
+
+main div.sixteenth ul:last-child li img { width: 100%; }
+
+main div.seventeenth { margin: 2% 0; }
+main div.seventeenth img { width: 100%; }
+main div.eighteenth { width: 100%; }
+
+main div.eighteenth img { width: 100%; }
+
+main div.ninteenth { margin: 3% 0; width: 100%; }
+
+main div.ninteenth ul { width: 100%; display: flex; justify-content: space-around; }
+
+main div.ninteenth ul li { width: 45%; }
+
+main div.ninteenth ul li img { width: 100%; }
+
+main div.twentieth img { width: 100%; }
+
+main div.twenty-first img { width: 100%; }
+
+main div.twenty-second ul { width: 100%; display: flex; justify-content: space-around; margin: 2% 0; padding-right: 1%; }
+
+main div.twenty-second ul li { width: 30%; }
+
+main div.twenty-second ul li img { width: 100%; }
+
+main div.twenty-third img { width: 100%; }
+
+main div.twenty-forth img { width: 100%; }
+
+main div.twenty-fifth ul:first-child { width: 100%; display: flex; justify-content: space-around; margin: 2% 0; }
+
+main div.twenty-fifth ul:first-child li { width: 45%; }
+
+main div.twenty-fifth ul:first-child li img { width: 100%; }
+
+main div.twenty-fifth ul:last-child { width: 100%; display: flex; justify-content: space-around; }
+
+main div.twenty-fifth ul:last-child li { width: 22%; }
+
+main div.twenty-fifth ul:last-child li img { width: 100%; }
+
+main div.twenty-sixth { margin: 2% 0; }
+
+main div.twenty-sixth img { width: 100%; }
+
+main div.twenty-seventh img { width: 100%; }
+
+main div.twenty-eighth ul { width: 100%; display: flex; flex-wrap: wrap; justify-content: space-around; }
+
+main div.twenty-eighth ul li { width: 23%; margin: 2% 0; }
+
+main div.twenty-eighth ul li img { width: 100%; }
+
+main div.twenty-ninth { width: 100%; margin: 1% 0 2% 0; }
+
+main div.twenty-ninth img { width: 100%; }
+
+main div.thirty { padding-left: 2%; }
+
+main div.thirty a { width: 60px; display: block; line-height: 42px; font-size: 14px; border-bottom: 1px solid red; text-decoration: none; }
+
+main div.thirty-first { width: 100%; margin-top: 2%; margin-bottom: 1%; }
+
+main div.thirty-first ul { background-color: #FFF; width: 100%; padding: 0 2%; display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+main div.thirty-first ul li { width: 49%; border: 1px solid #ccc; margin-top: 1%; overflow: hidden; }
+
+main div.thirty-first ul li img { width: 100%; }
+
+main div.thirty-first ul li > a:nth-child(2) { width: 100%; white-space: nowrap; padding: 0 2%; line-height: 2; }
+
+main div.thirty-first ul li p { padding-left: 1%; }
+
+main div.thirty-first ul li p span:first-child { color: #e6282c; font-size: 16px; font-weight: bold; }
+
+main div.thirty-first ul li p span:last-child { font-size: 16px; text-decoration: line-through; }
+
+main div.thirty-second { padding-left: 2%; }
+
+main div.thirty-second a { width: 60px; display: block; line-height: 42px; font-size: 14px; border-bottom: 1px solid red; text-decoration: none; }
+
+main div.thirty-third { margin-top: 2%; width: 100%; }
+
+main div.thirty-third ul { width: 100%; }
+
+main div.thirty-third ul li { background-color: #FFF; margin-bottom: 2%; display: flex; }
+
+main div.thirty-third ul li > a { display: block; width: 15%; }
+
+main div.thirty-third ul li > a img { width: 100%; height: 100%; }
+
+main div.thirty-third ul li p { padding-left: 1%; display: flex; flex-direction: column; justify-content: space-around; }
+
+main div.thirty-third ul li p span { font-weight: bold; color: red; font-size: 16px; }
+
+main div.thirty-forth { width: 100%; }
+
+main div.thirty-forth p { background-color: #f9f9f9; border: 1px solid #ededed; height: 24px; padding-left: 2%; width: 98%; display: flex; justify-content: space-between; margin-bottom: 3%; text-align: center; }
+
+main div.thirty-fifth { margin-bottom: 5%; }
+
+main div.thirty-fifth img { width: 100%; }
+
+div.kefu { position: fixed; right: 5%; bottom: 20%; }
+
+div.kefu > a { width: 50px; }
+
+div.kefu > a img { width: 50px; }
+
+div.kefu > a p { font-size: 12px; }
+
+div.toTop { display: none; position: fixed; right: 5%; bottom: 10%; }
+
+div.toTop > a { display: block; width: 38px; text-decoration: none; }
+
+div.toTop > a span { display: block; width: 100%; color: black; font-size: 30px; line-height: 28px; }
+
+@media screen and (max-width: 450px) { div.seventh ul li a { font-size: 12px; } }
+
+@media screen and (max-width: 450px) { main div.seventh ul li > p span.newP { font-size: 12px; }
+  main div.seventh ul li > p span.oldP { font-size: 12px; } }
+
+@media screen and (max-width: 450px) { div.thirty-first ul li a { font-size: 12px; } }
+
+@media screen and (max-width: 450px) { main div.thirty-first ul li > p span.newP { font-size: 14px; }
+  main div.thirty-first ul li > p span.oldP { font-size: 14px; } }
+
+@media screen and (max-width: 450px) { main div.thirty-third ul li p a { font-size: 12px; }
+  main div.thirty-third ul li p span { font-size: 14px; } }
+
+
+/*footer{
+	position:fixed;
+	bottom:0;
+}*/

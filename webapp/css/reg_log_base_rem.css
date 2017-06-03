@@ -1,0 +1,42 @@
+
+body,html{
+	height: 100%;
+	max-width: 768px;
+	background-color:#F7F7F7;
+}
+.container{
+	// height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #F7F7F7;
+}
+.container .bar{
+	position: relative;
+	width: 100%;
+	height: 0.586667rem;
+	line-height:0.586667rem;
+	border-bottom:1px solid #eee;
+	background-color: #fff;
+	box-shadow: 0 0 10px #c8c8c8;
+}
+.container .bar .lg,
+.container .bar .icon-icon052{
+	position: absolute;
+	top:-1px;
+    font-size: 0.373333rem;
+    color: #ccc;
+}
+.container .bar .lg{
+	left:0.2rem;
+}
+.container .bar .icon-icon052{
+	right: 0.2rem;
+	font-weight: bold;
+	color:#6bc0b1;
+}
+.container .bar h1{
+	font-size: 0.226667rem;
+	text-align: center; 
+	font-weight: normal;
+	display: block;
+}

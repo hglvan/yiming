@@ -1,0 +1,113 @@
+body,html{
+	height:100%;
+	line-height: 1.6;
+	font-family: '微软雅黑';
+	font-size:14px;
+	background:#f3f3f3;
+}
+.all{
+	margin-top:20px;
+}
+.oli{
+	width:100%;
+	padding:10px;
+	background:#fff;
+	margin-bottom:10px;
+		position:relative;
+}
+.left{
+	float:left;
+}
+.right{
+	float:left;
+	margin-left:30px;    
+	height: 80px;
+
+}
+
+.price{
+	line-height:2;
+	color:red;
+	font-size:18px;
+}
+
+
+.buy-num{
+
+	font-size:14px;
+	color:#777;
+	width:100px;
+	left:90px;
+	bottom:40px;
+	position:relative;
+}
+
+.buy{
+
+	margin-top:5px;
+}
+.buy-add span{
+	text-align:center;
+	width:24px;
+	height:37px;
+	display:inline-block;
+	border: 1px solid #e4e4e4;
+	float:left;
+	line-height:37px;
+	font-weight:bold;
+	font-size:20px;
+}
+.num{
+	height:37px;
+	width:40px;
+	float:left;
+	border:1px solid #e4e4e4;
+	background:#f7f7f7;
+	text-align:center;
+	color:#ED5565;
+	font-weight:bold;
+}
+
+.off{
+	position:absolute;
+	top:5px;
+	right:30px;
+	text-align:center;
+	color:#ddd;
+	
+}
+
+
+.count{
+	margin-left:60px;
+	margin-bottom:20px;
+}
+
+.gozf{
+	width:100%;
+	height:40px;
+	background:#C40000;
+	color:#fff;
+	line-height:40px;
+	text-align:center;
+
+}
+
+.countPrice{
+	color:#C40000;
+	font-size:18px;
+}
+
+.tittle{
+	
+	width:120px;
+	height:20px;
+	line-height:20px;
+	overflow:hidden;
+
+}
+
+footer{
+	position:fixed;
+	bottom:0;
+}

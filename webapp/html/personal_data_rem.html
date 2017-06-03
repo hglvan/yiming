@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+
+	<title>个人资料</title>
+	<link rel="stylesheet" type="text/css" href="../css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/personal_data_rem.css">
+	<link rel="stylesheet" type="text/css" href="../css/reg_log_base_rem.css">
+	<script type="text/javascript" src="../js/rem.js"></script>
+    <script src="../../libs/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../../libs/common/global.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			//绑定点击事件：点击时清空输入框
+		    $('.item-input').on('click','>a',function(){
+		        $(this).siblings().val('');
+		    });
+
+		    //获取客户信息，初始为空
+		    //获取nickname phone email qq(分别获取)
+            var arr = [];
+            $.post(erp.baseUrl +'getmyoption',{
+                option : 'nickname'
+            },function (response) {
+                arr = response;
+                console.log(arr);
+                $('#input-nickname').val(arr);
+
+                //获取phone---------------
+                $.post(erp.baseUrl +'getmyoption',{
+	                option : 'phone'
+	            },function (response) {
+	                arr = response;
+	                console.log(arr);
+	                $('#input-phone').val(arr);
+
+	                //获取email------------
+	                $.post(erp.baseUrl +'getmyoption',{
+		                option : 'email'
+		            },function (response) {
+		                arr = response;
+		                console.log(arr);
+		                $('#input-email').val(arr);
+
+		                //获取qq----------
+		                $.post(erp.baseUrl +'getmyoption',{
+			                option : 'qq'
+			            },function (response) {
+			                arr = response;
+			                console.log(arr);
+			                $('#input-qq').val(arr);
+			            })
+		            })
+	            })
+            })
+
+
+			//保存用户信息
+			$('#saveBtn').on('click',function(){
+
+	            $.post(erp.baseUrl +'putmsg',{
+	            	nickname : $('#input-nickname').val(),
+	                phone : $('#input-phone').val(),
+	                email : $('#input-email').val(),
+	                qq : $('#input-qq').val()
+	            },function (response) {
+	            
+	            });
+
+			})
+
+
+
+		})
+	</script>
+</head>
+<body>
+	<!--标题栏-->
+	<div class="container">
+		<header class="bar">
+        	<a href="personal_rem.html" class="iconfont icon-fanhui lg"></a>
+        	<h1 class="title">个人资料</h1>
+    	</header>
+	</div>
+
+	<div class="person_data">
+		<ul>
+			<li>
+				<div class="item-input">
+	                <input type="text" placeholder="&nbsp;昵称" name="nickname" value="" id="input-nickname">
+	                <a href="#" id="cls_nickname" class="iconfont icon-x"></a>
+	            </div>
+			</li>
+			<li>
+				<div class="item-input">
+	                <input type="text" placeholder="&nbsp;请填写您的手机号" name="phone" value="" id="input-phone">
+	                <a href="#" id="cls_phone" class="iconfont icon-x"></a>
+	            </div>
+			</li>
+			<li>
+				<div class="item-input">
+	                <input type="text" placeholder="&nbsp;请填写你的邮箱" name="email" value="" id="input-email">
+	                <a href="#" id="cls_email" class="iconfont icon-x"></a>
+	            </div>
+			</li>
+			<li>
+				<div class="item-input">
+	                <input type="text" placeholder="&nbsp;请填写您的QQ号码" name="qq" value="" id="input-qq">
+	                <a href="#" id="cls_qq" class="iconfont icon-x"></a>
+	            </div>
+			</li>
+		</ul>
+
+		<div class="btn_Msg">
+			<a href="#" class="saveMsg" id="saveBtn">保存用户信息</a>
+		</div>
+
+		<i class="kefuImg"><img src="../img/kefu.jpg"></i>
+		
+	</div>
+</body>
+</html>

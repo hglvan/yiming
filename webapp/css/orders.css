@@ -1,0 +1,96 @@
+.all{
+	margin-bottom:100px;
+	background:#ddd;
+}
+.tab .title{
+	display: flex;
+	border-bottom: 1px solid #ddd;
+	background:white;
+}
+.tab .title span{
+	flex:1;
+	text-align: center;
+	padding:7px 0;
+	font-size: 14px;
+}
+.active{
+	border-bottom: 2px solid #FF5609;
+	color:#FF5609;
+}
+
+.all{
+	width:100%;
+}
+.ordergoods{
+	width:100%;
+	background:white;
+	margin-bottom:20px;
+}
+
+.lihead{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	background:#F7F7F7;
+}
+
+.goodsImg{
+	float:left;
+}
+
+.goodsImg img{
+	width:100px;
+	height:100px;
+}
+
+.goodsMsg,.goodsPrice{
+	margin-top:7px;
+	margin-bottom:5px;
+}
+
+.goodsPrice{
+	color:red;
+}
+
+.alink{
+	float:right;
+	margin-top:5px;
+	padding:10px;
+	
+}
+
+.alink a{
+
+	color:black;
+	font-size:15px;
+	margin-left:3px;
+}
+
+.lifoot{
+	margin-top: 5px;
+}
+
+.libody{
+	
+	border-bottom: 1px solid #ccc;
+	
+}
+
+/*设置底部*/
+
+footer{
+	position:fixed;
+	bottom:0;
+}
+
+footer { width: 100%; height: 52px; color: #000000; background-color: #F8F8F8; }
+
+footer ul { cursor: pointer; width: 100%; display: flex; margin-bottom: 0; }
+
+footer ul li { flex: 1; display: flex; align-items: center; flex-direction: column; }
+
+footer ul li span, footer ul li i { display: block; flex: 1; }
+
+footer ul li i { font-size: 24px; padding-top: 6px; }
+
+header form span { cursor: pointer; }

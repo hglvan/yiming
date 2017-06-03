@@ -1,0 +1,289 @@
+body,html{
+	height:100%;
+	line-height: 1.6;
+	font-family: '微软雅黑';
+	font-size:16px;
+	background:#f3f3f3;
+
+}
+.all{
+	height:100%;
+	display:flex;
+	flex-direction:column;
+	max-width:640px;
+	margin:0 auto;
+}
+
+section{
+	flex:1;
+	/*overflow-x:hidden;*/
+	overflow-y:auto;
+}
+
+/*点击购物车跳出窗口*/
+.addcar,.collect{
+	background:#fff;
+	border: 1px solid #ddd;
+	position:fixed;
+	top:20px;
+	left:50%;
+	width:300px;
+	padding:10px;
+	z-index:99;
+	line-height:2.5;
+	margin-left:-150px;
+	display:none;
+}
+.addcar_top p:nth-child(1){
+	float:left;
+	font-weight:bold;
+}
+.addcar_top p:nth-child(2){
+	float:right;
+	color:#ddd;
+}
+
+.addcar_bottom{
+	float:right;
+	margin-top:5px;
+}
+.addcar_bottom input{
+	padding:10px;
+	border: 1px solid #ddd;
+}
+.off{
+	background:#fff;
+
+}
+
+.goMycar,.collectBtn{
+	background:#c40000;
+	color:#fff;
+}
+
+
+
+/*设置收藏提示*/
+/*.collect{
+	display:block;
+}
+*/
+
+
+
+
+
+/*设置在线客服*/
+
+.onlineclient{
+
+	position:fixed;
+	right:10px;
+	bottom:80px;
+
+}
+
+
+/*设置轮播图*/
+.swiper{
+	position:relative;
+	/*height:320px;*/
+	width:100%;
+	padding:0;
+	overflow:hidden; /*不加的话，轮播图会扩大页面宽度*/
+
+}
+.swiper .swiper-slide img{
+	width:100%;
+
+}
+
+/*设置商品标题与价格*/
+.sec_goods{
+	font-size:16px;
+	padding:10px 5px;
+	border-bottom: 1px solid #ddd;
+	padding:10px 5px;
+	background:#fff;
+}
+.ln{
+	height:20px;
+	background:#fff;
+}
+
+.fl_price>p{
+	float:left;
+	color:red;
+}
+
+.pf_price{
+	color:red;
+}
+.pf_price>p{
+	float:left;
+}
+.pf_price .sold{
+	
+	float:right;
+	font-size:14px;
+	color:#777;
+	line-height:2
+}
+
+/*设置商品购买数量*/
+
+.buy-num{
+
+	padding:10px 5px;
+	width:100%;
+	background:#f3f3f3;
+	font-size:14px;
+	color:#777;
+}
+.buy-add{
+	font-size:22px;
+}
+.buy{
+
+	margin-top:5px;
+}
+.buy-add span{
+	text-align:center;
+	width:24px;
+	height:37px;
+	display:inline-block;
+	border: 1px solid #e4e4e4;
+	float:left;
+}
+.num{
+	height:37px;
+	width:40px;
+	float:left;
+	border:1px solid #e4e4e4;
+	background:#f7f7f7;
+	text-align:center;
+	color:#ED5565;
+	font-weight:bold;
+}
+.sy_num{
+	line-height:2;
+	margin-left:22px;
+	
+	float:left;
+}
+
+
+
+/*设置产品属性*/
+table{
+	width:100%;
+	background:#fff;
+	border-collapse: collapse;
+	margin-top:5px;
+	font-size:14px;
+
+}
+table tr{
+	border-bottom:1px solid #ddd;
+	width:100%;
+
+}
+table td{
+	padding:10px 5px;
+}
+
+.attr .line{
+	width:100%;
+	height:10px;
+	background:#f3f3f3;
+}
+
+.attr .attr_bottom{
+	width:100%;
+	background:#fff;
+}
+.attr_bottom a{
+	display:inline-block;
+	width:100%;
+	height:44px;
+	line-height:44px;
+	border-top:1px solid #ddd;
+	color:#3e3e3e;
+	text-align:center;
+	position:relative;
+}
+.attr_bottom span{
+	display:inline-block;
+	width:20px;
+	height:20px;
+	border-radius:50%;
+	background:#aab2bd;
+	color:white;
+	line-height:20px;
+	position:absolute;
+	right:20px;
+	bottom:10px;
+	font-size:12px;
+	font-weight:bold;
+
+}
+
+/*设置列表图片*/
+
+.showImg{
+	width:100%;
+	margin-bottom:10px;
+}
+
+.showImg img{
+	width:100%;
+}
+
+
+/*设置底部*/
+
+footer{
+	
+	width:100%;
+	height: 50px;
+	font-size: 16px;
+	text-align:center;
+	/*position:fixed;
+	bottom:0px;*/
+	
+	max-width:640px;
+}
+footer a{
+	color: #fff;
+}
+.footer_left{
+	width:20%;
+	height:50px;
+	background:#000;
+	
+	line-height:1;
+	float:left;
+
+}
+.footer_left i{
+	font-size:30px;
+	color: #fff;
+
+}
+
+.buy_buy{
+	width:50%;
+	background:#fe9402;
+	line-height:50px;
+	height:50px;
+	float:left;
+
+}
+.buy_car{
+	width:30%;
+	background:#fe4e00;
+	line-height:50px;
+	height:50px;
+	float:left;
+
+}
